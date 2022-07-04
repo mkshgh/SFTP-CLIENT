@@ -42,9 +42,9 @@ A really simple implementation of sftp client for windows.
   
     ```
     EG: "FILE_AGE":"200" is 200 seonds
-    EG: "FILE_AGE":"2m" is 200 minutes
-    EG: "FILE_AGE":"2h" is 200 hours
-    EG: "FILE_AGE":"2d" is 200 days
+    EG: "FILE_AGE":"2m" is 2 minutes
+    EG: "FILE_AGE":"2h" is 2 hours
+    EG: "FILE_AGE":"2d" is 2 days
     ```
 
 ## Things to consider
