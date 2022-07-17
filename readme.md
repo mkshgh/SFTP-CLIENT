@@ -42,9 +42,9 @@ A really simple implementation of sftp client for windows.
   
     ```
     EG: "FILE_AGE":"200" is 200 seonds
-    EG: "FILE_AGE":"2m" is 2 minutes
-    EG: "FILE_AGE":"2h" is 2 hours
-    EG: "FILE_AGE":"2d" is 2 days
+    EG: "FILE_AGE":"2m" is 200 minutes
+    EG: "FILE_AGE":"2h" is 200 hours
+    EG: "FILE_AGE":"2d" is 200 days
     ```
 
 ## Things to consider
@@ -73,11 +73,11 @@ pyinstaller --onefile YourFileName
 ```
 
 ## TODO
-- Make it into a background service
-- Add scheduling functionality in the script
-- Add functionality to delete the files in the remote server if older than some time.
-- Compatibility with linux, IS MAC WORTH IT?
-- Custom Port Doesn't Work for now.
+- [ ] Make it into a background service
+- [ ] Add scheduling functionality in the script
+- [x] Add functionality to delete the files in the remote server if older than some time.
+- [ ] Compatibility with linux, IS MAC WORTH IT?
+- [x] Custom SFTP port working now
 
 ## REFERENCES
 - https://pysftp.readthedocs.io/en/release_0.2.9/
