@@ -9,7 +9,7 @@ A really simple implementation of sftp client for windows.
         "USER":"yourUsername",
         "PASS":"yourpass",
         "IP":"IP of the server",
-        "PORT":"Empty if standard port or 22",
+        "PORT":"Empty if standard port 22 or manually assign",
         "SOURCE":"C:\\PATH\\TO\\FOLDER",
         "UPLOAD_INTERVAL":"200|1m|2h|1d",
         "FILE_AGE":"200|1m|2h|1d",
@@ -68,7 +68,7 @@ pip install pyinstaller
 
 cd YourFilePath
 
-pyinstaller --onefile YourFileName
+pyinstaller --onefile sftpRunner.py
 
 ```
 
