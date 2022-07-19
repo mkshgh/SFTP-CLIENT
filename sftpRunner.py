@@ -26,7 +26,7 @@ def get_local_files_newer_than(source:str,extension:str,file_age:str):
                 # Dont Delete for now
                 # human_rea_epoch_time = time.ctime(expected_files_age)
                 # print(entry.name)
-                print("expected_files_age:",expected_files_age)
+                # print("expected_files_age:",expected_files_age)
                 # print("file_epoch_time:",file_epoch_time)
                 # print("current_epoch_time:",current_epoch_time)
                 # print("time_diff:",time_diff)

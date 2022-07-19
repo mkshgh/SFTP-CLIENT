@@ -24,11 +24,10 @@ def upload_files_to_remote_server(upload_files:str,source:str,sftp_config:dict):
         cnopts = pysftp.CnOpts()
         cnopts.hostkeys = None 
         with pysftp.Connection(sftp_config["IP"], username=sftp_config["USER"], port=sftp_config["PORT"],  password=sftp_config["PASS"], cnopts=cnopts) as sftp:
-            
+            if not os.path.isdir(".TEMP"): os.mkdir(".TEMP")
             for files in upload_files:
                 src_file=os.path.join(source,files)
                 # Copy the files
-                if not os.path.isdir(".TEMP"): os.mkdir(".TEMP")
                 temp_file=os.path.join(".TEMP",files)
                 shutil.copyfile(src_file, temp_file)
                 sftp.put(os.path.join(source,files),preserve_mtime=True)
